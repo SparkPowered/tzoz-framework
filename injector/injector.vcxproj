@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EAA4F344-6036-4B93-8A91-0174B01A0D1F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>injector</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hello\Documents\Visual Studio 11\Projects\mu-framework\mu-framework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <AdditionalOptions>/GX- /GR- %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies />
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ManifestFile />
+      <ProgramDatabaseFile />
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\hash\crc32.h" />
+    <ClInclude Include="..\hash\hash.h" />
+    <ClInclude Include="..\hash\md5.h" />
+    <ClInclude Include="..\stdafx.h" />
+    <ClInclude Include="..\type.h" />
+    <ClInclude Include="..\util\address.h" />
+    <ClInclude Include="..\util\color.h" />
+    <ClInclude Include="..\util\cstring.h" />
+    <ClInclude Include="..\util\linkedlist.h" />
+    <ClInclude Include="..\util\logfile.h" />
+    <ClInclude Include="..\util\mathlib.h" />
+    <ClInclude Include="..\util\rand.h" />
+    <ClInclude Include="..\util\staticlist.h" />
+    <ClInclude Include="..\util\stringtools.h" />
+    <ClInclude Include="..\util\vec3.h" />
+    <ClInclude Include="..\util\vector.h" />
+    <ClInclude Include="..\util\vmthook.h" />
+    <ClInclude Include="..\util\wstring.h" />
+    <ClInclude Include="..\win\imports.h" />
+    <ClInclude Include="..\win\ntddk.h" />
+    <ClInclude Include="..\win\ntmodule.h" />
+    <ClInclude Include="..\win\ntremotemodule.h" />
+    <ClInclude Include="..\win\process.h" />
+    <ClInclude Include="..\win\syscall.h" />
+    <ClInclude Include="..\win\syscall_w7.h" />
+    <ClInclude Include="loader\imageloader.h" />
+    <ClInclude Include="loader\remoteimageloader.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\hash\crc32.cpp" />
+    <ClCompile Include="..\hash\hash.cpp" />
+    <ClCompile Include="..\hash\md5.cpp" />
+    <ClCompile Include="..\stdafx.cpp" />
+    <ClCompile Include="..\util\address.cpp" />
+    <ClCompile Include="..\util\cstring.cpp" />
+    <ClCompile Include="..\util\logfile.cpp" />
+    <ClCompile Include="..\util\mathlib.cpp" />
+    <ClCompile Include="..\util\rand.cpp" />
+    <ClCompile Include="..\util\stringtools.cpp" />
+    <ClCompile Include="..\util\vec3.cpp" />
+    <ClCompile Include="..\util\vmthook.cpp" />
+    <ClCompile Include="..\win\imports.cpp" />
+    <ClCompile Include="..\win\ntmodule.cpp" />
+    <ClCompile Include="..\win\ntremotemodule.cpp" />
+    <ClCompile Include="..\win\process.cpp" />
+    <ClCompile Include="..\win\syscall.cpp" />
+    <ClCompile Include="..\win\syscall_w7.cpp" />
+    <ClCompile Include="injector.cpp" />
+    <ClCompile Include="loader\imageloader.cpp" />
+    <ClCompile Include="loader\remoteimageloader.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

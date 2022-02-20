@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{60182A4C-D500-4313-B9ED-F279E290E1AE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>muframework</RootNamespace>
+    <ProjectName>CSS</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hello\Documents\Visual Studio 11\Projects\mu-framework\mu-framework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalOptions>/GX- /GR- %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies />
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <EnableUAC>true</EnableUAC>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <ManifestFile />
+      <ProgramDatabaseFile />
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\hello\Documents\Visual Studio 11\Projects\mu-framework\mu-framework;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalOptions>/GX- /GR- %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <EnableUAC>true</EnableUAC>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <ManifestFile>
+      </ManifestFile>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="css\hook\client.h" />
+    <ClInclude Include="css\hook\config.h" />
+    <ClInclude Include="css\hook\core.h" />
+    <ClInclude Include="css\hook\drawpanel.h" />
+    <ClInclude Include="css\hook\gui.h" />
+    <ClInclude Include="css\hook\hooks.h" />
+    <ClInclude Include="css\hook\movedata.h" />
+    <ClInclude Include="css\hook\netvars.h" />
+    <ClInclude Include="css\hook\settings.h" />
+    <ClInclude Include="css\hook\sourcefont.h" />
+    <ClInclude Include="css\hook\sourcemodule.h" />
+    <ClInclude Include="css\hook\trace.h" />
+    <ClInclude Include="css\sdk\csweapon.h" />
+    <ClInclude Include="css\sdk\baseentity.h" />
+    <ClInclude Include="css\sdk\basehandle.h" />
+    <ClInclude Include="css\sdk\bspflags.h" />
+    <ClInclude Include="css\sdk\buttoncode.h" />
+    <ClInclude Include="css\sdk\cliententlist.h" />
+    <ClInclude Include="css\sdk\client_class.h" />
+    <ClInclude Include="css\sdk\client_dll.h" />
+    <ClInclude Include="css\sdk\const.h" />
+    <ClInclude Include="css\sdk\csplayer.h" />
+    <ClInclude Include="css\sdk\cvar.h" />
+    <ClInclude Include="css\sdk\debugoverlay.h" />
+    <ClInclude Include="css\sdk\engineclient.h" />
+    <ClInclude Include="css\sdk\enginetrace.h" />
+    <ClInclude Include="css\sdk\gameresources.h" />
+    <ClInclude Include="css\sdk\globalvarsbase.h" />
+    <ClInclude Include="css\sdk\input.h" />
+    <ClInclude Include="css\sdk\inputsystem.h" />
+    <ClInclude Include="css\sdk\modelinfo.h" />
+    <ClInclude Include="css\sdk\modelrender.h" />
+    <ClInclude Include="css\sdk\prediction.h" />
+    <ClInclude Include="css\sdk\steamclient.h" />
+    <ClInclude Include="css\sdk\util_shared.h" />
+    <ClInclude Include="css\sdk\utlmemory.h" />
+    <ClInclude Include="css\sdk\vguipanel.h" />
+    <ClInclude Include="css\sdk\vguisurface.h" />
+    <ClInclude Include="hash\crc32.h" />
+    <ClInclude Include="hash\hash.h" />
+    <ClInclude Include="hash\md5.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="type.h" />
+    <ClInclude Include="util\address.h" />
+    <ClInclude Include="util\color.h" />
+    <ClInclude Include="util\cstring.h" />
+    <ClInclude Include="util\linkedlist.h" />
+    <ClInclude Include="util\logfile.h" />
+    <ClInclude Include="util\mathlib.h" />
+    <ClInclude Include="util\rand.h" />
+    <ClInclude Include="util\staticlist.h" />
+    <ClInclude Include="util\stringtools.h" />
+    <ClInclude Include="util\vec3.h" />
+    <ClInclude Include="util\vector.h" />
+    <ClInclude Include="util\vmthook.h" />
+    <ClInclude Include="util\wstring.h" />
+    <ClInclude Include="win\imports.h" />
+    <ClInclude Include="win\ntddk.h" />
+    <ClInclude Include="win\ntmodule.h" />
+    <ClInclude Include="win\ntremotemodule.h" />
+    <ClInclude Include="win\process.h" />
+    <ClInclude Include="win\syscall.h" />
+    <ClInclude Include="win\syscall_w7.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="css\hook\client.cpp" />
+    <ClCompile Include="css\hook\config.cpp" />
+    <ClCompile Include="css\hook\core.cpp" />
+    <ClCompile Include="css\hook\drawpanel.cpp" />
+    <ClCompile Include="css\hook\gui.cpp" />
+    <ClCompile Include="css\hook\hooks.cpp" />
+    <ClCompile Include="css\hook\movedata.cpp" />
+    <ClCompile Include="css\hook\netvars.cpp" />
+    <ClCompile Include="css\hook\settings.cpp" />
+    <ClCompile Include="css\hook\sourcefont.cpp" />
+    <ClCompile Include="css\hook\sourcemodule.cpp" />
+    <ClCompile Include="css\hook\trace.cpp" />
+    <ClCompile Include="css\sdk\cliententlist.cpp" />
+    <ClCompile Include="css\sdk\csweapon.cpp" />
+    <ClCompile Include="css\sdk\baseentity.cpp" />
+    <ClCompile Include="css\sdk\client_dll.cpp" />
+    <ClCompile Include="css\sdk\csplayer.cpp" />
+    <ClCompile Include="css\sdk\enginetrace.cpp" />
+    <ClCompile Include="css\sdk\input.cpp" />
+    <ClCompile Include="css\sdk\util_shared.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="hash\crc32.cpp" />
+    <ClCompile Include="hash\hash.cpp" />
+    <ClCompile Include="hash\md5.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="type.cpp" />
+    <ClCompile Include="util\address.cpp" />
+    <ClCompile Include="util\cstring.cpp" />
+    <ClCompile Include="util\logfile.cpp" />
+    <ClCompile Include="util\mathlib.cpp" />
+    <ClCompile Include="util\rand.cpp" />
+    <ClCompile Include="util\stringtools.cpp" />
+    <ClCompile Include="util\vec3.cpp" />
+    <ClCompile Include="util\vmthook.cpp" />
+    <ClCompile Include="win\imports.cpp" />
+    <ClCompile Include="win\ntmodule.cpp" />
+    <ClCompile Include="win\ntremotemodule.cpp" />
+    <ClCompile Include="win\process.cpp" />
+    <ClCompile Include="win\syscall.cpp" />
+    <ClCompile Include="win\syscall_w7.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

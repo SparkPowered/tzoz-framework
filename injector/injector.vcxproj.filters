@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\lib">
+      <UniqueIdentifier>{77b6f0df-b16c-479c-9e0d-be8c77d011f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\hash">
+      <UniqueIdentifier>{925687b7-5dbd-4ff4-94b6-9c4378f8d670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\util">
+      <UniqueIdentifier>{13e053eb-b56c-4c9f-9583-ad2b61e051e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\win">
+      <UniqueIdentifier>{acd78c4f-a603-4942-a936-13168c1a53fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib">
+      <UniqueIdentifier>{18c1f9e1-5e8f-4418-a396-63d713a8607c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\hash">
+      <UniqueIdentifier>{68766f70-ec0b-4ba7-abd7-07ba7b855ca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\util">
+      <UniqueIdentifier>{ba445328-dec3-4361-8513-cb4610487418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\win">
+      <UniqueIdentifier>{784cb052-07c3-467f-beb8-8dc91fbc888a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\loader">
+      <UniqueIdentifier>{12400421-6af4-48b0-8913-7ed68a299dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\loader">
+      <UniqueIdentifier>{0ccd29ac-670e-49ee-bf84-6c9cae0442e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\type.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hash\crc32.h">
+      <Filter>Header Files\lib\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hash\hash.h">
+      <Filter>Header Files\lib\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hash\md5.h">
+      <Filter>Header Files\lib\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\address.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\color.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\cstring.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\linkedlist.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\logfile.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\mathlib.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\rand.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\staticlist.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\stringtools.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\vec3.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\vector.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\vmthook.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\wstring.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\win\imports.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\win\ntddk.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\win\ntmodule.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\win\ntremotemodule.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\win\process.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\win\syscall.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\win\syscall_w7.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="loader\imageloader.h">
+      <Filter>Header Files\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="loader\remoteimageloader.h">
+      <Filter>Header Files\loader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="injector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hash\crc32.cpp">
+      <Filter>Source Files\lib\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hash\hash.cpp">
+      <Filter>Source Files\lib\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hash\md5.cpp">
+      <Filter>Source Files\lib\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\address.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\logfile.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\mathlib.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\rand.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\stringtools.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\vec3.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\vmthook.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\imports.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\ntmodule.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\ntremotemodule.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\process.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\syscall.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\syscall_w7.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="loader\imageloader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="loader\remoteimageloader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\cstring.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

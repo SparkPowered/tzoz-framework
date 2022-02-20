@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\lib">
+      <UniqueIdentifier>{440c9eee-c4b1-4bf4-985d-61ac7d279466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\win">
+      <UniqueIdentifier>{d2c3f7a6-c80d-47c0-8091-92b7c0c4e65e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\util">
+      <UniqueIdentifier>{9ada97d5-b293-444a-9ac0-2d4679efb668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\hash">
+      <UniqueIdentifier>{934dffc5-d4a3-4019-88bc-6f223599dbe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\css">
+      <UniqueIdentifier>{e85b6226-9b7f-4d32-8d57-b8274a20ecb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\css\sdk">
+      <UniqueIdentifier>{fa4b4cc8-4af0-4ef0-ad41-75378460be52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\css\hook">
+      <UniqueIdentifier>{dc76abd9-cd22-4ccb-bce6-8aceea61f488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\css">
+      <UniqueIdentifier>{78b5a96d-516b-4db5-bb94-92545a7bf40e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\css\sdk">
+      <UniqueIdentifier>{c912e107-7a76-4165-9c67-4c53c353f0ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\css\hook">
+      <UniqueIdentifier>{5f014f7e-4f04-4c0b-9b9b-0b7f43fd63d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib">
+      <UniqueIdentifier>{eb526fc1-d71a-4ee0-baf8-2e57da8cf8b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\win">
+      <UniqueIdentifier>{553fd3e5-e8e5-4f60-8ece-5bfb55014352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\util">
+      <UniqueIdentifier>{0a5c5514-8b1d-47db-89b8-fdea77fad503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\hash">
+      <UniqueIdentifier>{41bb3d04-8fb3-471e-b9db-5f2a56e928dd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\baseentity.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\basehandle.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\bspflags.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\buttoncode.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\client_class.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\client_dll.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\cliententlist.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\const.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\cvar.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\debugoverlay.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\engineclient.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\enginetrace.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\gameresources.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\globalvarsbase.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\input.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\inputsystem.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\modelinfo.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\modelrender.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\prediction.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\steamclient.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\vguipanel.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\vguisurface.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\core.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\sourcefont.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\sourcemodule.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\util_shared.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\netvars.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\csplayer.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\hooks.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\drawpanel.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\client.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\trace.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="type.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="win\imports.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="win\ntddk.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="win\ntmodule.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="win\ntremotemodule.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="win\process.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="win\syscall.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="win\syscall_w7.h">
+      <Filter>Header Files\lib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="util\address.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\color.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\cstring.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\linkedlist.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\logfile.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\mathlib.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\rand.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\staticlist.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\stringtools.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\vec3.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\vector.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\vmthook.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\wstring.h">
+      <Filter>Header Files\lib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="hash\crc32.h">
+      <Filter>Header Files\lib\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="hash\hash.h">
+      <Filter>Header Files\lib\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="hash\md5.h">
+      <Filter>Header Files\lib\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\config.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\movedata.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\gui.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="css\hook\settings.h">
+      <Filter>Header Files\css\hook</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\utlmemory.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="css\sdk\csweapon.h">
+      <Filter>Header Files\css\sdk</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hash\hash.cpp">
+      <Filter>Source Files\lib\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="hash\crc32.cpp">
+      <Filter>Source Files\lib\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="util\rand.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\address.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="hash\md5.cpp">
+      <Filter>Source Files\lib\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="util\stringtools.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="win\syscall.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="win\syscall_w7.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win\ntmodule.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="util\mathlib.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="win\imports.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="util\vec3.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\logfile.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\vmthook.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="win\process.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="win\ntremotemodule.cpp">
+      <Filter>Source Files\lib\win</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\core.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\sourcefont.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\sourcemodule.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="css\sdk\input.cpp">
+      <Filter>Source Files\css\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="css\sdk\util_shared.cpp">
+      <Filter>Source Files\css\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="css\sdk\baseentity.cpp">
+      <Filter>Source Files\css\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\netvars.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="css\sdk\client_dll.cpp">
+      <Filter>Source Files\css\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="css\sdk\csplayer.cpp">
+      <Filter>Source Files\css\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\hooks.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\drawpanel.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="type.cpp">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\client.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\trace.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\config.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="util\cstring.cpp">
+      <Filter>Source Files\lib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\movedata.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="css\sdk\enginetrace.cpp">
+      <Filter>Source Files\css\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\gui.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="css\hook\settings.cpp">
+      <Filter>Source Files\css\hook</Filter>
+    </ClCompile>
+    <ClCompile Include="css\sdk\csweapon.cpp">
+      <Filter>Source Files\css\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="css\sdk\cliententlist.cpp">
+      <Filter>Source Files\css\sdk</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+</Project>
